@@ -1,0 +1,106 @@
+/*------------------------------- NavBar -------------------------------*/
+.navBar {
+    display: grid;
+    padding: 5px 20px;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    background: black;
+}
+/*------------------------------- Logo -------------------------------*/
+.logo {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    justify-self: left;
+    cursor: default;
+}
+.logoPic {
+    width: 50px;
+    border-radius: 15px;
+}
+
+.logoName {
+    margin: 0 10px;
+}
+
+/*------------------------------- FIlter and Search Bar -------------------------------*/
+.Filter-bar {
+    position: relative;
+    grid-column: 2/ -1;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-input {
+    position: absolute;
+    padding: 2px 5px;
+    bottom: -10px;
+    right: 40px;
+    width: 150px;
+    height: 20px;
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+    border-style: none;
+    outline: none;
+    color: orange;
+    background: rgb(34, 34, 34);
+}
+
+.search-btn {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    width: 30px;
+    height: 24px;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid orange;
+    outline: none;
+    /* border-style: none; */
+    background: orange;
+    cursor: pointer;
+    border-inline-start: 5px;
+}
+
+.fa-arrow-right {
+    color: rgb(34, 34, 34);
+}
+/* .search-btn:focus {
+    border-style: inset;
+} */
+
+/*------------------------------- Media Queries -------------------------------*/
+/* Large devices */
+@media (min-width: 992px) and (max-width:1200px) {
+    
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width:992px) {
+
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width:768px) {
+    .search-input {
+        width: 120px;
+    }
+
+}
+
+/* Extra small devices */
+@media (max-width: 576px){
+    .logoName {
+        display: none;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+}

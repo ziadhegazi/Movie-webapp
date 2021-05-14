@@ -1,0 +1,123 @@
+/*------------------------------- Drop down Filter  -------------------------------*/
+.filter-btn {
+    display: flex;
+    outline: none;
+}
+
+.filter {
+    color: orange;
+    letter-spacing: 1px;
+}
+
+.arrow-filter {
+    color: orange;
+    margin: 0 2px;
+}
+
+.dropDown {
+    position: absolute;
+    right: 230px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropDown-list {
+    position: absolute;
+    top: 33px;
+    left: 7px;
+    width: 250px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    cursor: default;
+    border-radius: 10px;
+    display: none;
+}
+
+.dropDown-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height: 100%; */
+    list-style: none;
+    width: 100%;
+}
+
+.option-item {
+    position: relative;
+    margin: 10px 0.5em;
+    padding: 0 3px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.option-item:hover .check-input {
+    background: rgb(190, 124, 0);
+}
+
+.option-item:hover .active {
+    background: rgb(63, 63, 63);
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.check-input {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: orange;
+    border-radius: 4px;
+    border-style: inset;
+    border: 1px solid rgb(34, 34, 34);
+    z-index: 4;
+}
+
+input:checked ~ .check-input::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    content: " ✓ ";
+    color: orange;
+    text-align: center;
+    font-size: 10px;
+    background: transparent;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+}
+
+.active {
+    background: rgb(34, 34, 34);
+}
+
+/*------------------------------- Media Queries -------------------------------*/
+/* Large devices */
+@media (min-width: 992px) and (max-width:1200px) {
+    
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width:992px) {
+
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width:768px) {
+    .dropDown {
+        right: 200px;
+    }
+
+}
+
+/* Extra small devices */
+@media (max-width: 576px){
+    .dropDown {
+        right: 170px;
+    }
+}
