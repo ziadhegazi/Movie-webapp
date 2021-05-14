@@ -183,4 +183,26 @@
         margin: 1em 0.5em;
         width: 45%;
     }
+
+    .popup-box input {
+        color: orange;
+        background: transparent;
+        margin: 5px 1em 2em;
+        width: 130px;
+        height: 25px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(75, 75, 75);
+    }
+
+    .popup-box textarea {
+        color: orange;
+        background: transparent;
+        margin: 5px 1em 2em;
+        width: 130px;
+        height: 100px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(75, 75, 75);
+    }
 }
