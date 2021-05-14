@@ -110,7 +110,6 @@
         overflow: hidden;
         justify-items: center;
         width: 30%;
-        height: 33% ;
     }
 }
 
@@ -122,6 +121,6 @@
         overflow: hidden;
         justify-items: center;
         width: 45%;
-        height: 33%
+        height: 250px
     }
 }
