@@ -10,7 +10,7 @@ const App = () => {
 
   // API Fetching
   const fetchMovies = async () => {
-    const  response = await axios.get("https://api.themoviedb.org/3/discover/movie?api_key=c30198ca9a0b79184b36140b958d82e3&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate");
+    const  response = await axios.get("https://api.themoviedb.org/3/discover/movie?api_key=c30198ca9a0b79184b36140b958d82e3&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_watch_monetization_types=flatrate");
     console.log(response.data.results);
     
     // updating the movies array
