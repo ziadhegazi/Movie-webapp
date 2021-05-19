@@ -1,13 +1,12 @@
-// import React, {useState} from 'react';
+// import React, {useState, useEffect} from 'react';
 import React from 'react'; 
 import MovieCard from './movieCard';
 import "./movieList.css";
-import Header from './Header';
 
-const MovieList = ({list}) => {
+const MovieList = ({list, moredetail}) => {
     const imgLink = "https://image.tmdb.org/t/p/w500";
-    const totalList = list.map((e,x) => <MovieCard title={e.title} posterURL={`${imgLink}${e.poster_path}`} description={e.overview} rating={e.vote_average} id={x}/>)
-    
+    const totalList = list.map((e) => <MovieCard title={e.title} posterURL={`${imgLink}${e.poster_path}`} description={e.overview} rating={e.vote_average} Moredetail={moredetail} id={e.id} />);
+
     
     // const [search,setSearch] = useState("");
     // const [final,setFinal] =  useState(() => totalList);
@@ -55,7 +54,6 @@ const MovieList = ({list}) => {
   return(
     <div>
         {/* <Header handlesearch={handleSearch} /> */}
-        <Header />
         <div className="movieList" >
             {totalList}
             <div className="add-movie">

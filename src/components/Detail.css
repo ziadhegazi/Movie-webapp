@@ -1,0 +1,116 @@
+.detail-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*----------------------------- Back to Movie List Button -----------------------------*/
+.bk-to-ML {
+    display: flex;
+    margin: 1em 0.5em;
+    border: 2px solid orange;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bk-to-ML:hover {
+    background: orange;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.bk-to-ML:hover a {
+    background: orange;
+    color: rgb(34, 34, 34);
+}
+
+
+.bk-to-ML a {
+    color: orange;
+    text-decoration: none;
+}
+/*----------------------------- All content -----------------------------*/
+.detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1em 0.5em;
+}
+
+/* Text Content */
+.detail-text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 1em 0.5em;
+}
+
+.movie-title {
+    font-size: 46px;
+    margin: 0.5em 0.7em;
+}
+
+.movie-desc {
+    width: 90%;
+    height: fit-content;
+    font-size: 14px;
+    margin: 0.3em auto 1em;
+    padding: 20px;
+    line-height: 30px;
+}
+
+/*----------------------------- Video -----------------------------*/
+
+.trailer {
+    margin: 0.5em 1em 1em;
+}
+
+/*------------------------------- Media Queries -------------------------------*/
+/* Large devices */
+@media (min-width: 992px) and (max-width:1200px) {
+    .container {
+        margin: 1em 0.7em;
+        display: grid;
+        overflow: hidden;
+        justify-items: center;
+        width: 20%;
+    }
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width:992px) {
+    .container {
+        margin: 1em 0.7em;
+        display: grid;
+        overflow: hidden;
+        justify-items: center;
+        width: 25%;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width:768px) {
+    .container {
+        margin: 1em 0.7em;
+        display: grid;
+        overflow: hidden;
+        justify-items: center;
+        width: 30%;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px){
+    .container {
+        margin: 1em 0.5em;
+        display: grid;
+        overflow: hidden;
+        justify-items: center;
+        width: 45%;
+        height: 250px
+    }
+}

@@ -1,12 +1,18 @@
 import React, { useState, useEffect} from 'react';
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 // import movieCard from './components/movieCard';
 import axios from "axios";
 import MovieList from './components/movieList';
+import Header from './components/Header';
+import Detail from './components/Detail';
 
 const App = () => {
   // Hooks
   const [movies, setMovies] = useState([]);
+  const [id, setID] = useState("");
+  const [name, setName] = useState("")
+  const [desc, setDesc] = useState("")
 
   // API Fetching
   const fetchMovies = async () => {
@@ -18,11 +24,26 @@ const App = () => {
   }
 
   useEffect(() => fetchMovies(),[]);
- 
+
+
+  const moreDetail = (e) => {
+    // console.log(e);
+    setID(e.id)
+    setName(e.title)
+    setDesc(e.description)
+  }
+  
+
   return(
-    <div>
-      <MovieList list={movies} />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <switch>
+          <Route path="/" exact component={() => <MovieList list={movies} moredetail={moreDetail} />} />
+          <Route path="/:id" component={() => <Detail id={id} name={name} description={desc} />} />
+        </switch>
+      </div>
+    </Router>
   );
 }
 export default App;
