@@ -39,8 +39,8 @@ const App = () => {
       <div>
         <Header />
         <switch>
-          <Route path="/" exact component={() => <MovieList list={movies} moredetail={moreDetail} />} />
-          <Route path="/:id" component={() => <Detail id={id} name={name} description={desc} />} />
+          <Route path="/Movie-webapp" exact component={() => <MovieList list={movies} moredetail={moreDetail} />} />
+          <Route path="/Movie-webapp/:id" component={() => <Detail id={id} name={name} description={desc} />} />
         </switch>
       </div>
     </Router>

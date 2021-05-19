@@ -26,7 +26,7 @@ const Detail = ({id, name, description}) => {
     return(
         <div className="detail-box">
             <div className="bk-to-ML">
-                <Link to="/">Back to Movie List</Link>
+                <Link to="/Movie-webapp">Back to Movie List</Link>
             </div>
             <div className="detail-content">
                 <div className="detail-text">
