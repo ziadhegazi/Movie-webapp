@@ -1,21 +1,7 @@
 {
-  "files": {
-    "main.css": "/Movie-webapp/static/css/main.33f20a8f.chunk.css",
-    "main.js": "/Movie-webapp/static/js/main.3e999c8a.chunk.js",
-    "main.js.map": "/Movie-webapp/static/js/main.3e999c8a.chunk.js.map",
-    "runtime-main.js": "/Movie-webapp/static/js/runtime-main.5e75465f.js",
-    "runtime-main.js.map": "/Movie-webapp/static/js/runtime-main.5e75465f.js.map",
-    "static/js/2.daa58fa9.chunk.js": "/Movie-webapp/static/js/2.daa58fa9.chunk.js",
-    "static/js/2.daa58fa9.chunk.js.map": "/Movie-webapp/static/js/2.daa58fa9.chunk.js.map",
-    "index.html": "/Movie-webapp/index.html",
-    "static/css/main.33f20a8f.chunk.css.map": "/Movie-webapp/static/css/main.33f20a8f.chunk.css.map",
-    "static/js/2.daa58fa9.chunk.js.LICENSE.txt": "/Movie-webapp/static/js/2.daa58fa9.chunk.js.LICENSE.txt",
-    "static/media/ZH style 2 WIP3pdf.8be5be2b.jpg": "/Movie-webapp/static/media/ZH style 2 WIP3pdf.8be5be2b.jpg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.5e75465f.js",
-    "static/js/2.daa58fa9.chunk.js",
-    "static/css/main.33f20a8f.chunk.css",
-    "static/js/main.3e999c8a.chunk.js"
-  ]
+  "main.css": "static/css/main.6b8d0891.css",
+  "main.css.map": "static/css/main.6b8d0891.css.map",
+  "main.js": "static/js/main.ade3ca1b.js",
+  "main.js.map": "static/js/main.ade3ca1b.js.map",
+  "static\\media\\ZH style 2 WIP3pdf.jpg": "static/media/ZH style 2 WIP3pdf.0f81c50d.jpg"
 }
